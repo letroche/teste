@@ -1,0 +1,12 @@
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa12.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erro Léxico na linha 31, posição 9: token recognition error at: '"Acabou o programa\r'
+Erros encontrados:
+  - Erro lexico na linha 31, posição 9: token irreconhecivel: '"Acabou o programa\r'
+
+Compilacao falhou!

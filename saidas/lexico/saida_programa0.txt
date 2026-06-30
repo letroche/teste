@@ -1,0 +1,10 @@
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa0.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erro lexico na linha 19, posicao 58: palavra 'ENTO' nao e reconhecida. Esperava 'ENTAO'.
+
+Compilacao falhou!

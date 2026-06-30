@@ -1,0 +1,13 @@
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa7.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erros encontrados:
+  - Erro lexico na linha 8, posicao 1: erro de reconhecimento de token: token irreconhecivel: '! '
+  - Erro lexico na linha 8, posicao 3: erro de reconhecimento de token: token irreconhecivel: 'C'
+  - Erro lexico na linha 8, posicao 29: erro de reconhecimento de token: token irreconhecivel: 'ú'
+
+Compilacao falhou!

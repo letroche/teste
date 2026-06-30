@@ -12,7 +12,7 @@ LER num2
 LER num3
 SE num1 > num2 ENTAO
    INI
-      aux := 2. 4+3-4+5-6*5-1.6
+      aux := 2.4+3-4+5-6*5-1.6
       num2 := num1
       num1 := aux
    FIM 

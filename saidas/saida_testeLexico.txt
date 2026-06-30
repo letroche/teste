@@ -1,0 +1,375 @@
+===== programa0.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa0.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erro Lexico na linha 19, posicao 58: palavra 'ENTO' nao e reconhecida. Esperava 'ENTAO'.
+
+Compilacao FALHADA!
+
+===== programa1.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa1.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 48
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Analise sintatica concluida com sucesso!
+
+[3] ANÁLISE SEMÂNTICA E GERAÇÃO DE CÓDIGO
+-----------------------------------------
+Iniciando análise do programa...
+[ANÁLISE] Variável declarada: parametro (tipo: INT)
+[ANÁLISE] Variável declarada: fatorial (tipo: INT)
+Análise do programa concluída!
+Analise semantica concluida com sucesso!
+
+[4] GERAÇÃO DO CÓDIGO
+-----------------------------------------
+Código C gerado: src/testes/testeLexico/programa1.c
+
+[5] CÓDIGO C GERADO
+-----------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int fatorial = 0;
+    int parametro = 0;
+
+    scanf("%d", &parametro);
+    fatorial = parametro;
+    fatorial = 1;
+    if (parametro==0) {
+    }
+    fatorial = fatorial*(parametro-1);
+    parametro = parametro-1;
+    while (parametro>1) {
+    }
+    printf("%d\n", fatorial);
+    printf("Oi");
+
+    return 0;
+}
+
+
+[6] COMPILAÇÃO DO CÓDIGO C
+-----------------------------------------
+Codigo compilado com sucesso!
+Executável gerado: src/testes/testeLexico/programa1
+
+========================================
+COMPILACAO CONCLUIDA COM SUCESSO!
+========================================
+Entrada: src/testes/testeLexico/programa1.gyh
+Saída C: src/testes/testeLexico/programa1.c
+Executável: src/testes/testeLexico/programa1
+Variáveis: 2
+
+===== programa10.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa10.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 101
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Analise sintatica concluida com sucesso!
+
+[3] ANÁLISE SEMÂNTICA E GERAÇÃO DE CÓDIGO
+-----------------------------------------
+Iniciando análise do programa...
+[ANÁLISE] Variável declarada: num1 (tipo: INT)
+[ANÁLISE] Variável declarada: num2 (tipo: INT)
+[ANÁLISE] Variável declarada: num3 (tipo: INT)
+[ANÁLISE] Variável declarada: aux (tipo: INT)
+Análise do programa concluída!
+ERROS ENCONTRADOS:
+  - Erro Semântico: Variável 'num4' não foi declarada!
+  - Erro Semântico: Variável 'num4' não foi declarada!
+
+Compilacao FALHADA!
+
+===== programa11.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa11.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 103
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Analise sintatica concluida com sucesso!
+
+[3] ANÁLISE SEMÂNTICA E GERAÇÃO DE CÓDIGO
+-----------------------------------------
+Iniciando análise do programa...
+[ANÁLISE] Variável declarada: num1 (tipo: INT)
+[ANÁLISE] Variável declarada: num2 (tipo: INT)
+[ANÁLISE] Variável declarada: num3 (tipo: INT)
+[ANÁLISE] Variável declarada: aux (tipo: INT)
+Análise do programa concluída!
+ERROS ENCONTRADOS:
+  - Erro Semântico: Variável 'num4' não foi declarada!
+  - Erro Semântico: Variável 'num4' não foi declarada!
+
+Compilacao FALHADA!
+
+===== programa12.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa12.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erro Léxico na linha 15, posição 14: token recognition error at: '.'
+Erro Léxico na linha 31, posição 9: token recognition error at: '"Acabou o programa\r'
+ERROS ENCONTRADOS:
+  - Erro Léxico na linha 15, posição 14: token recognition error at: '.'
+  - Erro Léxico na linha 31, posição 9: token recognition error at: '"Acabou o programa\r'
+
+Compilacao FALHADA!
+
+===== programa2.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa2.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erro Léxico na linha 4, posição 10: token recognition error at: 'INt'
+ERROS ENCONTRADOS:
+  - Erro Léxico na linha 4, posição 10: token recognition error at: 'INt'
+
+Compilacao FALHADA!
+
+===== programa3.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa3.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 47
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Erro Sintático na linha 5, posição 0: no viable alternative at input 'parametroINTfatorial'
+Erro Sintático na linha 5, posição 9: mismatched input 'INT' expecting 'PROG'
+Analise sintatica concluida com sucesso!
+
+[3] ANÁLISE SEMÂNTICA E GERAÇÃO DE CÓDIGO
+-----------------------------------------
+Iniciando análise do programa...
+Análise do programa concluída!
+Analise semantica concluida com sucesso!
+
+[4] GERAÇÃO DO CÓDIGO
+-----------------------------------------
+Código C gerado: src/testes/testeLexico/programa3.c
+
+[5] CÓDIGO C GERADO
+-----------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+    return 0;
+}
+
+
+[6] COMPILAÇÃO DO CÓDIGO C
+-----------------------------------------
+Codigo compilado com sucesso!
+Executável gerado: src/testes/testeLexico/programa3
+
+========================================
+COMPILACAO CONCLUIDA COM SUCESSO!
+========================================
+Entrada: src/testes/testeLexico/programa3.gyh
+Saída C: src/testes/testeLexico/programa3.c
+Executável: src/testes/testeLexico/programa3
+Variáveis: 0
+
+===== programa4.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa4.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erro Léxico na linha 14, posição 34: token recognition error at: '_'
+ERROS ENCONTRADOS:
+  - Erro Léxico na linha 14, posição 34: token recognition error at: '_'
+
+Compilacao FALHADA!
+
+===== programa5.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa5.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erro Léxico na linha 11, posição 13: token recognition error at: '= '
+ERROS ENCONTRADOS:
+  - Erro Léxico na linha 11, posição 13: token recognition error at: '= '
+
+Compilacao FALHADA!
+
+===== programa6.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa6.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 58
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Erro Sintático na linha 18, posição 17: no viable alternative at input 'tudobem'
+Analise sintatica concluida com sucesso!
+
+[3] ANÁLISE SEMÂNTICA E GERAÇÃO DE CÓDIGO
+-----------------------------------------
+Iniciando análise do programa...
+[ANÁLISE] Variável declarada: parametro (tipo: INT)
+[ANÁLISE] Variável declarada: fatorial (tipo: INT)
+Análise do programa concluída!
+ERROS ENCONTRADOS:
+  - Erro Semântico: Variável 'oi' não foi declarada!
+
+Compilacao FALHADA!
+
+===== programa7.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa7.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erro Léxico na linha 8, posição 0: token recognition error at: '! '
+Erro Léxico na linha 8, posição 2: token recognition error at: 'C'
+Erro Léxico na linha 8, posição 28: token recognition error at: 'ú'
+ERROS ENCONTRADOS:
+  - Erro Léxico na linha 8, posição 0: token recognition error at: '! '
+  - Erro Léxico na linha 8, posição 2: token recognition error at: 'C'
+  - Erro Léxico na linha 8, posição 28: token recognition error at: 'ú'
+
+Compilacao FALHADA!
+
+===== programa8.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa8.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 53
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Erro Sintático na linha 11, posição 33: no viable alternative at input 'SEparametro!=0OUparametro<=='
+Analise sintatica concluida com sucesso!
+
+[3] ANÁLISE SEMÂNTICA E GERAÇÃO DE CÓDIGO
+-----------------------------------------
+Iniciando análise do programa...
+[ANÁLISE] Variável declarada: parametro (tipo: INT)
+[ANÁLISE] Variável declarada: fatorial (tipo: REAL)
+Análise do programa concluída!
+Analise semantica concluida com sucesso!
+
+[4] GERAÇÃO DO CÓDIGO
+-----------------------------------------
+Código C gerado: src/testes/testeLexico/programa8.c
+
+[5] CÓDIGO C GERADO
+-----------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    float fatorial = 0;
+    int parametro = 0;
+
+    scanf("%d", &parametro);
+    fatorial = parametro;
+
+    return 0;
+}
+
+
+[6] COMPILAÇÃO DO CÓDIGO C
+-----------------------------------------
+Codigo compilado com sucesso!
+Executável gerado: src/testes/testeLexico/programa8
+
+========================================
+COMPILACAO CONCLUIDA COM SUCESSO!
+========================================
+Entrada: src/testes/testeLexico/programa8.gyh
+Saída C: src/testes/testeLexico/programa8.c
+Executável: src/testes/testeLexico/programa8
+Variáveis: 2
+
+===== programa9.gyh =====
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa9.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 101
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Analise sintatica concluida com sucesso!
+
+[3] ANÁLISE SEMÂNTICA E GERAÇÃO DE CÓDIGO
+-----------------------------------------
+Iniciando análise do programa...
+[ANÁLISE] Variável declarada: num1 (tipo: INT)
+[ANÁLISE] Variável declarada: num2 (tipo: INT)
+[ANÁLISE] Variável declarada: num3 (tipo: INT)
+[ANÁLISE] Variável declarada: aux (tipo: INT)
+Análise do programa concluída!
+ERROS ENCONTRADOS:
+  - Erro Semântico: Variável 'num4' não foi declarada!
+  - Erro Semântico: Variável 'num4' não foi declarada!
+
+Compilacao FALHADA!
+

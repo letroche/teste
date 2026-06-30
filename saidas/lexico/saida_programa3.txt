@@ -1,0 +1,16 @@
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa3.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 49
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Erros encontrados:
+  - Erro sintatico na linha 12, posicao 18: nenhuma alternativa valida at input 'ENQTOparametro<>'
+
+Compilacao falhou!

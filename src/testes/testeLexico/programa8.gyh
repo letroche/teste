@@ -8,7 +8,7 @@ fatorial:REAL
 # ####
 LER parametro
 fatorial := parametro 
-SE parametro != 0 OU parametro < == 0 ENTAO fatorial := 1
+SE parametro != 0 OU parametro == 0 ENTAO fatorial := 1
 ENQTO parametro > 1
 INI
 fatorial := fatorial * (parametro - 1) 

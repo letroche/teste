@@ -1,0 +1,11 @@
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa5.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erros encontrados:
+  - Erro lexico na linha 11, posicao 14: erro de reconhecimento de token: token irreconhecivel: '= '
+
+Compilacao falhou!

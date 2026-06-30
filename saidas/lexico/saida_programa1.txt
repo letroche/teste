@@ -1,0 +1,63 @@
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa1.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 48
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Analise sintatica concluida com sucesso!
+
+[3] ANÁLISE SEMÂNTICA E GERAÇÃO DE CÓDIGO
+-----------------------------------------
+Iniciando análise do programa...
+[ANÁLISE] Variável declarada: parametro (tipo: INT)
+[ANÁLISE] Variável declarada: fatorial (tipo: INT)
+Análise do programa concluída!
+Analise semantica concluida com sucesso!
+
+[4] GERAÇÃO DO CÓDIGO
+-----------------------------------------
+Código C gerado: src/testes/testeLexico/programa1.c
+
+[5] CÓDIGO C GERADO
+-----------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int fatorial = 0;
+    int parametro = 0;
+
+    scanf("%d", &parametro);
+    fatorial = parametro;
+    fatorial = 1;
+    if (parametro==0) {
+    }
+    fatorial = fatorial*(parametro-1);
+    parametro = parametro-1;
+    while (parametro>1) {
+    }
+    printf("%d\n", fatorial);
+    printf("Oi");
+
+    return 0;
+}
+
+
+[6] COMPILAÇÃO DO CÓDIGO C
+-----------------------------------------
+Codigo compilado com sucesso!
+Executável gerado: src/testes/testeLexico/programa1
+
+========================================
+Compilacao concluida com sucesso!
+========================================
+Entrada: src/testes/testeLexico/programa1.gyh
+Saída C: src/testes/testeLexico/programa1.c
+Executável: src/testes/testeLexico/programa1
+Variáveis: 2

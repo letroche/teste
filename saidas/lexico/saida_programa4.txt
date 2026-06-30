@@ -1,0 +1,11 @@
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa4.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erros encontrados:
+  - Erro lexico na linha 14, posicao 35: erro de reconhecimento de token: token irreconhecivel: '_'
+
+Compilacao falhou!

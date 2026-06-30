@@ -1,0 +1,25 @@
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa6.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 58
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Erro Sintático na linha 18, posição 17: no viable alternative at input 'tudobem'
+Analise sintatica concluida com sucesso!
+
+[3] ANÁLISE SEMÂNTICA E GERAÇÃO DE CÓDIGO
+-----------------------------------------
+Iniciando análise do programa...
+[ANÁLISE] Variável declarada: parametro (tipo: INT)
+[ANÁLISE] Variável declarada: fatorial (tipo: INT)
+Análise do programa concluída!
+Erros encontrados:
+  - Erro Semântico: Variável 'oi' não foi declarada!
+
+Compilacao falhou!

@@ -1,0 +1,11 @@
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa2.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Erros encontrados:
+  - Erro lexico na linha 4, posicao 11: erro de reconhecimento de token: token irreconhecivel: 'INt'
+
+Compilacao falhou!

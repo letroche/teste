@@ -1,0 +1,27 @@
+========================================
+Compilador GYH
+========================================
+Arquivo de entrada: src/testes/testeLexico/programa9.gyh
+
+[1] ANÁLISE LÉXICA
+-----------------------------------------
+Tokens encontrados: 101
+Analise lexica concluida com sucesso!
+
+[2] ANÁLISE SINTÁTICA
+-----------------------------------------
+Analise sintatica concluida com sucesso!
+
+[3] ANÁLISE SEMÂNTICA E GERAÇÃO DE CÓDIGO
+-----------------------------------------
+Iniciando análise do programa...
+[ANÁLISE] Variável declarada: num1 (tipo: INT)
+[ANÁLISE] Variável declarada: num2 (tipo: INT)
+[ANÁLISE] Variável declarada: num3 (tipo: INT)
+[ANÁLISE] Variável declarada: aux (tipo: INT)
+Análise do programa concluída!
+Erros encontrados:
+  - Erro Semântico: Variável 'num4' não foi declarada!
+  - Erro Semântico: Variável 'num4' não foi declarada!
+
+Compilacao falhou!
