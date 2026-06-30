@@ -1,0 +1,11 @@
+#Programa nao tem erro sintático
+
+:DEC
+parametro:INT
+fatorial:INT
+
+:PROG 
+# Calcula o fatorial de um número inteiro
+LER parametro
+IMPRIMIR fatorial
+IMPRIMIR "Oi"

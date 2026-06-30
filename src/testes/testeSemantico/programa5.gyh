@@ -1,0 +1,18 @@
+#Incompatibilidade de tipo
+
+:DEC
+parametro:INT
+fatorial:INT
+
+:PROG 
+# Calcula o fatorial de um número inteiro
+LER parametro
+fatorial := parametro 
+SE parametro == 0 ENTAO fatorial := 1
+ENQTO parametro > 1
+ INI
+  fatorial := (fatorial * (parametro - 1))/2 
+  parametro := parametro - 1
+ FIM
+IMPRIMIR fatorial
+IMPRIMIR "Oi"

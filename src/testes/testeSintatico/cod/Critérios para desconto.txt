@@ -1,0 +1,60 @@
+1) ----------------------------
+
+Falha ao executar a(s) linha(s) abaixo (por causa do parêntesis):
+fatorial := ((fatorial) * (parametro - 1)) 
+
+[-0,25]  FatorAritmetico ? NUMINT | NUMREAL | VARIAVEL | '(' ExpressaoAritmetica ')'
+
+2)----------------------------
+
+Falha ao executar a(s) linha(s) abaixo (por causa do parêntesis):
+
+SE ((parametro - 1)== 0) ENTAO fatorial := 1
+
+[-0,25] TermoRelacional ? ExpressaoAritmetica OP_REL ExpressaoAritmetica | '(' ExpressaoRelacional ')';
+
+
+3) ----------------------------
+
+Falha ao executar a(s) linha(s) abaixo (por causa da falta do FIM, era para dar erro; mas deu alguma Exception Index 0 out of bounds for length 0):
+
+ENQTO (parametro > 1)
+
+ INI
+
+        fatorial := fatorial * (parametro - 1) 
+
+        parametro := (parametro - 1)
+
+ IMPRIMIR fatorial
+
+[-0,2] SubAlgoritmo ? 'INI' ListaComandos 'FIM';
+
+4) ----------------------------
+Falha ao executar a(s) linha(s) abaixo (era para apresentar erro por falta de OpArit, mas não foi detectado tal problema)
+
+ENQTO (parametro > 1)
+
+ INI
+
+  fatorial := fatorial  (parametro - 1)
+
+  parametro := (parametro  1)
+
+   parametro := (parametro > 1)
+
+ FIM
+
+[-0,15] ExpressaoAritmetica ? ExpressaoAritmetica '+' TermoAritmetico | ExpressaoAritmetica '-' TermoAritmetico | TermoAritmetico;
+
+[-0,15] TermoAritmetico ? TermoAritmetico '*' FatorAritmetico | TermoAritmetico '/' FatorAritmetico | FatorAritmetico;
+
+
+
+5) ----------------------------
+
+Falha ao executar a(s) linha(s) abaixo (por causa da falta do ENTAO era para dar erro; mas deu alguma Exception Index 0 out of bounds for length 0):
+
+SE (parametro == 0) fatorial := 1
+
+[-0,1] OBS: a falha está correlacionada a TermoRelacional
